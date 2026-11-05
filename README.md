@@ -5,26 +5,19 @@
   <b>Escuela Superior de Cómputo (ESCOM)</b><br>
   Ingeniería en Sistemas Computacionales — Plan 2020<br>
   Unidad de aprendizaje: <b>Desarrollo de aplicaciones móviles nativas</b>
+  <b>Alumno:</b> Caballero Pérez Julio César<br>
+  <b>Grupo:</b> 7CV4<br>
 </p>
 
-| Dato | Valor |
-|---|---|
-| **Nombre completo** | `[Tu nombre completo]` |
-| **Boleta** | `[Tu boleta]` |
-| **Grupo** | `[Tu grupo]` |
-| **Fecha** | `[DD/MM/2026]` |
-| **Dispositivo de prueba** | `[Marca y modelo, ej. Samsung Galaxy A54]` |
-| **Versión de Android** | `[ej. Android 14]` |
 
----
 
 ## Índice
 
 1. [Objetivo](#1-objetivo)
 2. [Metodología de prueba](#2-metodología-de-prueba)
 3. [Parte 1 — Aplicación 1: Five Nights at ESCOM](#3-parte-1--aplicación-1-five-nights-at-escom)
-4. [Parte 1 — Aplicación 2: Salones](#4-parte-1--aplicación-2-salones)
-5. [Parte 2 — Evaluación de AUTECH](#5-parte-2--evaluación-de-autech)
+4. [Parte 2 — Aplicación 2: Salones](#4-parte-2--aplicación-2-salones)
+5. [Parte 3 — Evaluación de AUTECH](#5-parte-3--evaluación-de-autech)
 6. [Resumen de pruebas](#6-resumen-de-pruebas)
 7. [Conclusiones](#7-conclusiones)
 
@@ -38,13 +31,13 @@ Participar como persona probadora (*tester*) en dos aplicaciones distribuidas me
 
 Para cada aplicación se siguió el mismo procedimiento:
 
-1. **Inscripción:** abrir el enlace de prueba cerrada con la cuenta de Google autorizada como *tester* y aceptar la participación.
-2. **Instalación:** desde la ficha de Google Play, instalar la aplicación en el dispositivo Android.
-3. **Ejecución:** abrir la aplicación y verificar que inicia correctamente.
-4. **Pruebas funcionales:** explorar las funciones principales y registrar el resultado de cada prueba (✅ correcto / ⚠️ con observaciones / ❌ falla).
-5. **Evidencias:** capturas de pantalla tomadas en el propio dispositivo.
+1. **Inscripción:** Abrir el enlace de prueba cerrada con la cuenta de Google autorizada como *tester* y aceptar la participación.
+2. **Instalación:** Desde la ficha de Google Play, instalar la aplicación en el dispositivo Android.
+3. **Ejecución:** Abrir la aplicación y verificar que inicia correctamente.
+4. **Pruebas funcionales:** Explorar las funciones principales y registrar el resultado de cada prueba (✅ correcto / ⚠️ con observaciones / ❌ falla).
+5. **Evidencias:** Capturas de pantalla tomadas en el propio dispositivo.
 
-> Las capturas se guardan en la carpeta `capturas/` del repositorio.
+
 
 ---
 
@@ -61,7 +54,7 @@ Para cada aplicación se siguió el mismo procedimiento:
 Se abrió el enlace de inscripción con la cuenta de Google autorizada y se aceptó la participación como *tester*.
 
 <p align="center">
-  <img src="capturas/fnae_01_inscripcion.png" alt="Inscripción Five Nights at ESCOM" width="300">
+  <img src="capturas/Inscripcion_FNAF.png" alt="Inscripción Five Nights at ESCOM" width="300">
   <br><i>Figura 1. Confirmación de inscripción a la prueba cerrada de Five Nights at ESCOM.</i>
 </p>
 
@@ -70,10 +63,16 @@ Se abrió el enlace de inscripción con la cuenta de Google autorizada y se acep
 Desde la ficha de Google Play se instaló la aplicación y se abrió en el dispositivo.
 
 <p align="center">
-  <img src="capturas/fnae_02_instalada.png" alt="Five Nights at ESCOM instalada" width="300">
+  <img src="capturas/PlayStore_FNAE.jpeg" alt="Five Nights at ESCOM instalada" width="300">
   &nbsp;&nbsp;
-  <img src="capturas/fnae_03_abierta.png" alt="Five Nights at ESCOM en ejecución" width="300">
-  <br><i>Figura 2. Aplicación instalada desde Google Play. Figura 3. Aplicación abierta y en ejecución.</i>
+   <br><i>Figura 2. Aplicación instalada desde Google Play.
+   </i>
+
+</p>
+<p align="center">
+  <img src="capturas/Ejecuccion_FNAE.jpeg" alt="Five Nights at ESCOM instalada" width="300">
+  &nbsp;&nbsp;
+   <br><i>FFigura 3. Aplicación abierta y en ejecución.</i>
 </p>
 
 ### 3.3 Pruebas realizadas
@@ -98,7 +97,7 @@ Desde la ficha de Google Play se instaló la aplicación y se abrió en el dispo
 
 ---
 
-## 4. Parte 1 — Aplicación 2: Salones
+## 4. Parte 2 — Aplicación 2: Salones
 
 | Campo | Información |
 |---|---|
@@ -143,7 +142,7 @@ Desde la ficha de Google Play se instaló la aplicación y se abrió en el dispo
 
 ---
 
-## 5. Parte 2 — Evaluación de AUTECH
+## 5. Parte 3 — Evaluación de AUTECH
 
 | Campo | Información |
 |---|---|
@@ -221,16 +220,5 @@ Se respondió el formulario de retroalimentación solicitado por el docente.
 .
 ├── README.md
 └── capturas/
-    ├── fnae_01_inscripcion.png
-    ├── fnae_02_instalada.png
-    ├── fnae_03_abierta.png
-    ├── fnae_04_funcion.png
-    ├── salones_01_inscripcion.png
-    ├── salones_02_instalada.png
-    ├── salones_03_abierta.png
-    ├── salones_04_funcion.png
-    ├── autech_01_inscripcion.png
-    ├── autech_02_abierta.png
-    ├── autech_03_funcion.png
-    └── autech_04_formulario.png
+    
 ```
