@@ -79,21 +79,21 @@ Desde la ficha de Google Play se instaló la aplicación y se abrió en el dispo
 
 | # | Función probada | Pasos | Resultado esperado | Resultado obtenido | Estado |
 |---|---|---|---|---|---|
-| P1 | Inicio de la aplicación | Abrir la app desde el ícono | Carga la pantalla principal sin cerrarse | `[Describe lo que pasó]` | `[✅/⚠️/❌]` |
-| P2 | Menú principal / navegación | Tocar las opciones del menú | Cada opción abre su pantalla | `[...]` | `[...]` |
-| P3 | Iniciar una partida | Seleccionar "Jugar" / nueva noche | Comienza el juego | `[...]` | `[...]` |
-| P4 | Controles en juego (cámaras, puertas, etc.) | Usar los controles durante la partida | Responden al toque | `[...]` | `[...]` |
-| P5 | Sonido / audio | Jugar con volumen activado | Se escucha música y efectos | `[...]` | `[...]` |
-| P6 | Salir y volver a entrar | Minimizar y regresar a la app | Conserva el estado o regresa al menú | `[...]` | `[...]` |
+| P1 | Inicio de la aplicación | Abrir la app desde el ícono | Carga la pantalla principal sin cerrarse | `Se abrio la aplicación sin ningún problema, mostrando correctamente el menú del juego.` | `✅` |
+| P2 | Menú principal / navegación | Tocar las opciones del menú | Cada opción abre su pantalla | `Se probaron todas las opciónes en el menú principal, donde se muestra la opción de "Nueva partida" y "Salir"` | `✅` |
+| P3 | Iniciar una partida | Seleccionar "Jugar" / nueva noche | Comienza el juego | `Se selecciono la opción de "Nueva partida" y empezo correctamente la introducción al juego y posteriormente se puede empezar a jugar la primera noche. Algo que me llamo la atención es que al momento de seleccionar "Nueva partida" despliega un submenu mostrando las opciónes "Continuar", "Opciones", "Extras" cuando estas deberian de mostrar una vez se finalize la primera noche o al principio del menu principal aún sin iniciar la primera noche.` | `⚠️` |
+| P4 | Controles en juego (cámaras, puertas, etc.) | Usar los controles durante la partida | Responden al toque | `Todos los controles funcionan correctamente y reaccionan de manera correcta a la interacción del usuario.` | `✅` |
+| P5 | Sonido / audio | Jugar con volumen activado | Se escucha música y efectos | `Se escucha algo bajo el volumen al estar dentro del juego.` | `⚠️` |
+| P6 | Salir y volver a entrar | Minimizar y regresar a la app | Conserva el estado o regresa al menú | `Al momento de Salir del juego y volver a entrar se queda correctamente en el estado en donde se quedo y la hora.` | `✅` |
 
 <p align="center">
-  <img src="capturas/fnae_04_funcion.png" alt="Prueba de función" width="300">
+  <img src="capturas/Funcionamiento_FNAE.jpeg" alt="Prueba de función" width="300">
   <br><i>Figura 4. Evidencia de la función probada en Five Nights at ESCOM.</i>
 </p>
 
 ### 3.4 Observación
 
-> **Observación:** `[Escribe aquí al menos una observación concreta. Ejemplo de formato: "Al iniciar la noche 1, las cámaras cambian correctamente, pero el botón de la puerta derecha tarda en responder cuando se toca repetidamente."]`
+> **Observación:** `Todo el juego funciona correctamente , exceptuando la parte de la musica que se escucha bajo, el menú principal que despliega las opciones y se llega observar que aparecen despues de seleccionar la opción de "Nueva partida".`
 
 ---
 
@@ -108,37 +108,37 @@ Desde la ficha de Google Play se instaló la aplicación y se abrió en el dispo
 ### 4.1 Inscripción a la prueba cerrada
 
 <p align="center">
-  <img src="capturas/salones_01_inscripcion.png" alt="Inscripción Salones" width="300">
+  <img src="capturas/Inscripcion_Salones_UAM.png" alt="Inscripción Salones" width="300">
   <br><i>Figura 5. Confirmación de inscripción a la prueba cerrada de Salones.</i>
 </p>
 
 ### 4.2 Instalación y ejecución
 
 <p align="center">
-  <img src="capturas/salones_02_instalada.png" alt="Salones instalada" width="300">
+  <img src="capturas/PlayStore_UAM.jpeg" alt="Salones instalada" width="300"><br><i>Figura 6. Aplicación instalada desde Google Play.</i>
   &nbsp;&nbsp;
-  <img src="capturas/salones_03_abierta.png" alt="Salones en ejecución" width="300">
-  <br><i>Figura 6. Aplicación instalada desde Google Play. Figura 7. Aplicación abierta y en ejecución.</i>
+  <img src="capturas/Funcionamiento_UAM.jpeg" alt="Salones en ejecución" width="300">
+  <br><i>Figura 7. Aplicación abierta y en ejecución.</i>
 </p>
 
 ### 4.3 Pruebas realizadas
 
 | # | Función probada | Pasos | Resultado esperado | Resultado obtenido | Estado |
 |---|---|---|---|---|---|
-| P1 | Inicio de la aplicación | Abrir la app desde el ícono | Muestra la pantalla principal | `[...]` | `[...]` |
-| P2 | Consulta / búsqueda de salones | Buscar o seleccionar un salón | Muestra la información del salón | `[...]` | `[...]` |
-| P3 | Visualización de la información (mapa, edificio, horario, etc.) | Abrir el detalle de un salón | Datos legibles y correctos | `[...]` | `[...]` |
-| P4 | Navegación entre pantallas | Usar botón atrás y menús | Regresa a la pantalla anterior | `[...]` | `[...]` |
-| P5 | Rotación de pantalla | Girar el dispositivo | La interfaz se adapta sin perder datos | `[...]` | `[...]` |
+| P1 | Inicio de la aplicación | Abrir la app desde el ícono | Muestra la pantalla principal | `Al momento de presionar el icono de la app la abre correctamente y muestra el mapa de la UAM` | `✅` |
+| P2 | Consulta / búsqueda de salones | Buscar o seleccionar un salón | Muestra la información del salón | `Al presionar el boton "Ruta" despliega correctamente  el destino y el origen para poder ubicar el salón.` | `✅` |
+| P3 | Visualización de la información (mapa, edificio, etc.) | Abrir el detalle de un salón | Datos legibles y correctos | `En mi caso no pude abrir los detalles del salón,lo unico que me muestra es el tiempo que me hago de mi destino al edificio, lo cual cumple con el objetivo de la aplicación.` | `✅` |
+| P4 | Navegación entre pantallas | Usar botón atrás y menús | Regresa a la pantalla anterior | `Todos los botones funcionan correctamente, cumpliendo su objetivo.` | `✅` |
+| P5 | Rotación de pantalla | Girar el dispositivo | La interfaz se adapta sin perder datos | `La implementación de la rotación a mi parecer no es del todo comoda para el usuario ya que es algo distinta a las demás aplicaciones que usan la rotación para un mapa, se podria mejorar un poco, pero en general si funciona .` | `⚠️` |
 
 <p align="center">
-  <img src="capturas/salones_04_funcion.png" alt="Prueba de función" width="300">
+  <img src="capturas/Funcion_salones_UAM.jpeg" alt="Prueba de función" width="300">
   <br><i>Figura 8. Evidencia de la función probada en Salones.</i>
 </p>
 
 ### 4.4 Observación
 
-> **Observación:** `[Escribe aquí al menos una observación concreta: función probada, resultado o error encontrado.]`
+> **Observación:** `Todo funciona correctamente con la aplicación.`
 
 ---
 
@@ -146,20 +146,40 @@ Desde la ficha de Google Play se instaló la aplicación y se abrió en el dispo
 
 | Campo | Información |
 |---|---|
-| **Enlace de inscripción** | `[Enlace proporcionado por el docente]` |
-| **Ficha de Google Play** | `[Enlace proporcionado por el docente]` |
+| **Enlace de inscripción** | `QR  - Proporcionado por los alumnos del profesor` |
+
 
 ### 5.1 Registro, instalación y uso
 
-<p align="center">
-  <img src="capturas/autech_01_inscripcion.png" alt="Inscripción AUTECH" width="250">
-  &nbsp;
-  <img src="capturas/autech_02_abierta.png" alt="AUTECH en ejecución" width="250">
-  &nbsp;
-  <img src="capturas/autech_03_funcion.png" alt="Función de AUTECH" width="250">
-  <br><i>Figura 9. Inscripción. Figura 10. AUTECH en ejecución. Figura 11. Uso de una función principal.</i>
-</p>
+<div align="center">
 
+  <img src="capturas/Inscripción_AUTECH.jpeg"
+       alt="Inscripción AUTECH"
+       width="300">
+
+  <p><strong>Figura 9.</strong> Inscripción a la aplicación AUTECH.</p>
+
+</div>
+
+<div align="center">
+
+  <img src="capturas/Funcionamiento_AUTECH.jpeg"
+       alt="AUTECH en ejecución"
+       width="300">
+
+  <p><strong>Figura 10.</strong> AUTECH en ejecución.</p>
+
+</div>
+
+<div align="center">
+
+  <img src="capturas/Herramienta_probada_AUTECH.jpeg"
+       alt="Herramienta probada en AUTECH"
+       width="300">
+
+  <p><strong>Figura 11.</strong> Uso de una función principal de AUTECH.</p>
+
+</div>
 ### 5.2 Pruebas realizadas
 
 | # | Función probada | Pasos | Resultado esperado | Resultado obtenido | Estado |
