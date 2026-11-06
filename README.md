@@ -180,65 +180,145 @@ Desde la ficha de Google Play se instaló la aplicación y se abrió en el dispo
   <p><strong>Figura 11.</strong> Uso de una función principal de AUTECH.</p>
 
 </div>
-### 5.2 Pruebas realizadas
-
-| # | Función probada | Pasos | Resultado esperado | Resultado obtenido | Estado |
-|---|---|---|---|---|---|
-| P1 | Inicio de la aplicación | Abrir la app | Carga correctamente | `[...]` | `[...]` |
-| P2 | `[Función principal 1]` | `[...]` | `[...]` | `[...]` | `[...]` |
-| P3 | `[Función principal 2]` | `[...]` | `[...]` | `[...]` | `[...]` |
-| P4 | `[Función principal 3]` | `[...]` | `[...]` | `[...]` | `[...]` |
-
-### 5.3 Aspectos positivos
-
-| # | Aspecto | Descripción |
-|---|---|---|
-| 1 | `[ej. Navegación]` | `[Explica brevemente la fortaleza observada]` |
-| 2 | `[ej. Utilidad]` | `[...]` |
-| 3 | `[ej. Rendimiento / claridad]` | `[...]` |
-
-### 5.4 Aspectos negativos
-
-| # | Problema / limitación | Contexto en que se presenta | Sugerencia de mejora |
-|---|---|---|---|
-| 1 | `[...]` | `[Pantalla o acción donde ocurre]` | `[...]` |
-| 2 | `[...]` | `[...]` | `[...]` |
-| 3 | `[...]` | `[...]` | `[...]` |
-
-### 5.5 Formulario de retroalimentación
-
-Se respondió el formulario de retroalimentación solicitado por el docente.
-
+### 5.2 Módulo: Construcción de autómatas y Expresiones Regulares
+ 
+Se probó el lienzo de construcción y la conversión de una expresión regular a AFD. Con la expresión `abc` y el botón **Generar AFD**, la app generó un **AFD mínimo de 5 estados**. También mostró la simulación paso a paso de la cadena `abc`, que terminó en **ACEPTADA**, y casos de prueba: `abc` ✓, `ε` ✗, `ab` ✗, `abcc` ✗. La pestaña Regex → AFD incluye expresiones de ejemplo listas para usar (`a*b`, `(a|b)*`, `a(b|c)*`, `(ab)+`, `a?b*c`, `(a|b)*abb`).
+ 
 <p align="center">
-  <img src="capturas/autech_04_formulario.png" alt="Confirmación del formulario" width="300">
-  <br><i>Figura 12. Confirmación de envío del formulario (sin datos personales visibles).</i>
+  <img src="capturas/autech_03_regex_construir.jpeg" alt="Construir autómata" width="250">
+  &nbsp;
+  <img src="capturas/autech_04_regex_afd_abc.jpeg" alt="Regex abc a AFD" width="250">
+  &nbsp;
+  <img src="capturas/autech_05_regex_ejemplos.jpeg" alt="Ejemplos de regex" width="250">
+  <br><i>Figura 11. Lienzo de construcción. Figura 12. AFD mínimo generado para <code>abc</code> y simulación aceptada. Figura 13. Expresiones de ejemplo.</i>
 </p>
 
+### 5.3 Módulo: Autómatas y Lenguajes
+ 
+Se revisaron sus tres pestañas. **AFN → AFD** tiene un lienzo para dibujar el autómata y un campo para probar una o varias cadenas. **Operaciones** permite definir varios lenguajes (L1, L2) con un teclado de símbolos y aplicar unión, concatenación, cierre de Kleene, intersección, complemento, diferencia, reversa, homomorfismo y cociente. **Simplificación** obtiene el AFD con el mínimo número de estados.
+ 
+<p align="center">
+  <img src="capturas/autech_06_afn_afd.jpeg" alt="AFN a AFD" width="250">
+  &nbsp;
+  <img src="capturas/autech_07_operaciones.jpeg" alt="Operaciones con lenguajes" width="250">
+  &nbsp;
+  <img src="capturas/autech_08_simplificacion.jpeg" alt="Simplificación" width="250">
+  <br><i>Figura 14. AFN → AFD. Figura 15. Operaciones entre lenguajes. Figura 16. Simplificación de AFD.</i>
+</p>
+
+### 5.4 Módulo: Autómata de Pila (PDA)
+ 
+Se definió un PDA con estados `q0,q1,q2`, alfabeto `a,b`, alfabeto de pila `A,Z`, estado inicial `q0`, símbolo inicial de pila `Z`, estado de aceptación `q2` y **5 transiciones**. Corresponde al lenguaje aⁿbⁿ. También se revisaron las pestañas **Simular** (opciones *Grafo + pila* y *Pila + transiciones*) y **CFG** (conversión a gramática libre de contexto, que funciona sin conexión al servidor).
+ 
+<p align="center">
+  <img src="capturas/autech_09_pda_definir.jpeg" alt="Definir PDA" width="250">
+  &nbsp;
+  <img src="capturas/autech_10_pda_simular.jpeg" alt="Simular PDA" width="250">
+  &nbsp;
+  <img src="capturas/autech_11_pda_cfg.jpeg" alt="PDA a CFG" width="250">
+  <br><i>Figura 17. Definición del PDA. Figura 18. Pestaña de simulación. Figura 19. Conversión a CFG.</i>
+</p>
+
+### 5.5 Módulo: Máquina de Turing
+ 
+Se definió una MT con estados `q0,q1,q2,q3,qf`, estado inicial `q0`, estado de aceptación `qf`, **11 transiciones** en formato `estado,leer -> nuevo_estado,escribir,dirección` y cinta inicial `aabb`. Reconoce aⁿbⁿ marcando con `X` y `Y`. La pestaña **Grafo** dibujó correctamente el diagrama de estados, con su leyenda (inicial, aceptación, actual, normal) y controles de zoom.
+ 
+<p align="center">
+  <img src="capturas/autech_12_mt_definicion.jpeg" alt="Definición MT" width="250">
+  &nbsp;
+  <img src="capturas/autech_13_mt_simulacion.jpeg" alt="Simulación MT" width="250">
+  &nbsp;
+  <img src="capturas/autech_14_mt_grafo.jpeg" alt="Grafo MT" width="250">
+  <br><i>Figura 20. Definición de la MT. Figura 21. Pestaña de simulación. Figura 22. Grafo generado de la MT.</i>
+</p>
+
+### 5.6 Pruebas realizadas
+ 
+| # | Función probada | Pasos | Resultado esperado | Resultado obtenido | Estado |
+|---|---|---|---|---|---|
+| P1 | Pantalla de acceso | Abrir la app | Muestra opciones de inicio de sesión | Muestra login, crear cuenta, modo invitado y registro de profesor | ✅ |
+| P2 | Menú de herramientas | Entrar a la app | Lista de módulos disponibles | Muestra los 4 módulos con descripción y etiquetas | ✅ |
+| P3 | Regex → AFD | Escribir `abc` y presionar *Generar AFD* | Genera un AFD equivalente | Genera un AFD mínimo de 5 estados con su grafo | ✅ |
+| P4 | Simulación de cadena | Simular `abc` en el AFD generado | La cadena es aceptada | Animación paso a paso (3/3) y resultado **ACEPTADA** | ✅ |
+| P5 | Casos de prueba | Revisar cadenas `ε`, `ab`, `abcc` | Se rechazan | Se marcan como rechazadas (✗) | ✅ |
+| P6 | Operaciones entre lenguajes | Abrir pestaña *Operaciones* | Muestra las operaciones disponibles | Muestra L1/L2, teclado de símbolos y 9 operaciones | ✅ |
+| P7 | Definición de PDA | Capturar estados, alfabetos y 5 transiciones | Se registran sin errores | Tabla de transiciones capturada correctamente | ✅ |
+| P8 | Simulación de PDA | Ir a la pestaña *Simular* | Permite simular el PDA definido | Pide validar la definición antes de mostrar el grafo | ⚠️ |
+| P9 | Definición de MT | Capturar 11 transiciones y cinta `aabb` | Se acepta la definición | Definición capturada en modo texto | ✅ |
+| P10 | Grafo de MT | Abrir pestaña *Grafo* | Dibuja el diagrama de estados | Grafo generado con leyenda y zoom | ✅ |
+| P11 | Simulación de MT | Abrir pestaña *Simulación* | Muestra la simulación | Pide configurar e iniciar desde *Definición* primero | ⚠️ |
+ 
+### 5.7 Aspectos positivos
+ 
+| # | Aspecto | Descripción |
+|---|---|---|
+| 1 | **Organización y navegación** | Cada herramienta tiene pestañas claras (Definir / Simular / Grafo o CFG) y el menú principal describe cada módulo con etiquetas (NFA→DFA, PDA, CFG, etc.), por lo que se encuentra rápido lo que se busca. |
+| 2 | **Visualización y simulación paso a paso** | La conversión de `abc` a AFD mínimo dibujó el grafo y animó la lectura de la cadena símbolo por símbolo hasta indicar "ACEPTADA". Esto ayuda mucho a entender cómo funciona el autómata. |
+| 3 | **Utilidad y ejemplos incluidos** | Tiene expresiones regulares de ejemplo listas para usar, casos de prueba automáticos (cadenas aceptadas y rechazadas), varias operaciones entre lenguajes y conversión PDA → CFG que funciona sin conexión. |
+ 
+### 5.8 Aspectos negativos
+ 
+| # | Problema / limitación | Contexto en que se presenta | Sugerencia de mejora |
+|---|---|---|---|
+| 1 | **Línea gris sobre los botones de la barra de herramientas** | En los lienzos de *Construir* y *AFN → AFD* (Figuras 11, 14 y 16), una línea horizontal atraviesa los botones "Estado" y "Transición" y parece que el texto está tachado. | Revisar el *layout* de esa barra para que el separador o indicador no se encime sobre los botones. |
+| 2 | **Textos recortados** | El título "Autómata de Pila (PD..." aparece truncado en la barra superior. En *AFN → AFD* la ayuda de uso se corta ("transiciones vacías" queda incompleto). | Usar un título corto (por ejemplo, "PDA") o permitir dos líneas, y hacer que el cuadro de ayuda crezca o pueda expandirse. |
+| 3 | **Flujo de simulación poco directo** | En la MT y el PDA, la pestaña *Simulación* aparece vacía aunque la definición ya esté capturada. Hay que regresar a *Definición* y presionar "Iniciar Simulación" o "Validar definición". Además, en el grafo de la MT (zoom 61%) las etiquetas de las transiciones se leen muy pequeñas. | Validar automáticamente al cambiar de pestaña o poner un botón "Simular" directamente ahí, y ajustar el zoom inicial o el tamaño de las etiquetas del grafo. |
+ 
+### 5.9 Formulario de retroalimentación
+ 
+Se respondió el formulario de retroalimentación solicitado por el docente.
+ 
+<p align="center">
+  <img src="capturas/autech_15_formulario.png" alt="Confirmación del formulario" width="300">
+  <br><i>Figura 23. Confirmación de envío del formulario (sin datos personales visibles).</i>
+</p>
 ---
-
+ 
 ## 6. Resumen de pruebas
-
+ 
 | Aplicación | Inscripción | Instalación | Ejecución | Pruebas OK | Observaciones |
 |---|---|---|---|---|---|
 | Five Nights at ESCOM | `[✅/❌]` | `[✅/❌]` | `[✅/❌]` | `[x / 6]` | `[Resumen en una línea]` |
 | Salones | `[✅/❌]` | `[✅/❌]` | `[✅/❌]` | `[x / 5]` | `[...]` |
-| AUTECH | `[✅/❌]` | `[✅/❌]` | `[✅/❌]` | `[x / 4]` | `[...]` |
-
+| AUTECH | ✅ | ✅ | ✅ | 9 / 11 (2 con observaciones) | Funciona bien; detalles de interfaz y flujo de simulación |
+ 
 > **Incidencias:** `[Si alguna prueba cerrada no permitió inscribirse o instalar, describe el mensaje mostrado, incluye su captura y anota que se comunicó al docente. Si no hubo, escribe "Sin incidencias".]`
-
+ 
 ---
-
+ 
 ## 7. Conclusiones
-
+ 
 `[Redacta un párrafo breve sobre lo aprendido: cómo funcionan las pruebas cerradas en Google Play, la importancia de la retroalimentación de los testers antes de publicar una app, y qué aplicación tuvo mejor experiencia y por qué.]`
-
+ 
 ---
-
+ 
 ## Estructura del repositorio
-
+ 
 ```
 .
 ├── README.md
 └── capturas/
-    
+    ├── fnae_01_inscripcion.png
+    ├── fnae_02_instalada.png
+    ├── fnae_03_abierta.png
+    ├── fnae_04_funcion.png
+    ├── salones_01_inscripcion.png
+    ├── salones_02_instalada.png
+    ├── salones_03_abierta.png
+    ├── salones_04_funcion.png
+    ├── autech_01_inicio_sesion.jpeg
+    ├── autech_02_herramientas.jpeg
+    ├── autech_03_regex_construir.jpeg
+    ├── autech_04_regex_afd_abc.jpeg
+    ├── autech_05_regex_ejemplos.jpeg
+    ├── autech_06_afn_afd.jpeg
+    ├── autech_07_operaciones.jpeg
+    ├── autech_08_simplificacion.jpeg
+    ├── autech_09_pda_definir.jpeg
+    ├── autech_10_pda_simular.jpeg
+    ├── autech_11_pda_cfg.jpeg
+    ├── autech_12_mt_definicion.jpeg
+    ├── autech_13_mt_simulacion.jpeg
+    ├── autech_14_mt_grafo.jpeg
+    └── autech_15_formulario.png
 ```
