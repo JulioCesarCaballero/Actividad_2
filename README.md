@@ -64,15 +64,12 @@ Desde la ficha de Google Play se instaló la aplicación y se abrió en el dispo
 
 <p align="center">
   <img src="capturas/PlayStore_FNAE.jpeg" alt="Five Nights at ESCOM instalada" width="300">
-  &nbsp;&nbsp;
-   <br><i>Figura 2. Aplicación instalada desde Google Play.
-   </i>
-
+  <br><i>Figura 2. Aplicación instalada desde Google Play.</i>
 </p>
+
 <p align="center">
-  <img src="capturas/Ejecuccion_FNAE.jpeg" alt="Five Nights at ESCOM instalada" width="300">
-  &nbsp;&nbsp;
-   <br><i>FFigura 3. Aplicación abierta y en ejecución.</i>
+  <img src="capturas/Ejecuccion_FNAE.jpeg" alt="Five Nights at ESCOM en ejecución" width="300">
+  <br><i>Figura 3. Aplicación abierta y en ejecución.</i>
 </p>
 
 ### 3.3 Pruebas realizadas
@@ -115,8 +112,11 @@ Desde la ficha de Google Play se instaló la aplicación y se abrió en el dispo
 ### 4.2 Instalación y ejecución
 
 <p align="center">
-  <img src="capturas/PlayStore_UAM.jpeg" alt="Salones instalada" width="300"><br><i>Figura 6. Aplicación instalada desde Google Play.</i>
-  &nbsp;&nbsp;
+  <img src="capturas/PlayStore_UAM.jpeg" alt="Salones instalada" width="300">
+  <br><i>Figura 6. Aplicación instalada desde Google Play.</i>
+</p>
+
+<p align="center">
   <img src="capturas/Funcionamiento_UAM.jpeg" alt="Salones en ejecución" width="300">
   <br><i>Figura 7. Aplicación abierta y en ejecución.</i>
 </p>
@@ -151,46 +151,33 @@ Desde la ficha de Google Play se instaló la aplicación y se abrió en el dispo
 
 ### 5.1 Registro, instalación y uso
 
-<div align="center">
+<p align="center">
+  <img src="capturas/Inscripción_AUTECH.jpeg" alt="Inscripción AUTECH" width="300">
+  <br><i>Figura 9. Inscripción a la aplicación AUTECH.</i>
+</p>
 
-  <img src="capturas/Inscripción_AUTECH.jpeg"
-       alt="Inscripción AUTECH"
-       width="300">
+<p align="center">
+  <img src="capturas/Funcionamiento_AUTECH.jpeg" alt="AUTECH en ejecución" width="300">
+  <br><i>Figura 10. AUTECH en ejecución.</i>
+</p>
 
-  <p><strong>Figura 9.</strong> Inscripción a la aplicación AUTECH.</p>
+<p align="center">
+  <img src="capturas/Herramienta_probada_AUTECH.jpeg" alt="Herramienta probada en AUTECH" width="300">
+  <br><i>Figura 11. Uso de una función principal de AUTECH.</i>
+</p>
 
-</div>
-
-<div align="center">
-
-  <img src="capturas/Funcionamiento_AUTECH.jpeg"
-       alt="AUTECH en ejecución"
-       width="300">
-
-  <p><strong>Figura 10.</strong> AUTECH en ejecución.</p>
-
-</div>
-
-<div align="center">
-
-  <img src="capturas/Herramienta_probada_AUTECH.jpeg"
-       alt="Herramienta probada en AUTECH"
-       width="300">
-
-  <p><strong>Figura 11.</strong> Uso de una función principal de AUTECH.</p>
-
-</div>
 ### 5.2 Módulo: Construcción de autómatas y Expresiones Regulares
  
 Se probó el lienzo de construcción y la conversión de una expresión regular a AFD. Con la expresión `abc` y el botón **Generar AFD**, la app generó un **AFD mínimo de 5 estados**. También mostró la simulación paso a paso de la cadena `abc`, que terminó en **ACEPTADA**, y casos de prueba: `abc` ✓, `ε` ✗, `ab` ✗, `abcc` ✗. La pestaña Regex → AFD incluye expresiones de ejemplo listas para usar (`a*b`, `(a|b)*`, `a(b|c)*`, `(ab)+`, `a?b*c`, `(a|b)*abb`).
  
 <p align="center">
-  <img src="capturas/autech_03_regex_construir.jpeg" alt="Construir autómata" width="250">
-  &nbsp;
-  <img src="capturas/autech_04_regex_afd_abc.jpeg" alt="Regex abc a AFD" width="250">
-  &nbsp;
-  <img src="capturas/autech_05_regex_ejemplos.jpeg" alt="Ejemplos de regex" width="250">
-  <br><i>Figura 11. Lienzo de construcción. Figura 12. AFD mínimo generado para <code>abc</code> y simulación aceptada. Figura 13. Expresiones de ejemplo.</i>
+  <img src="capturas/Expresiones_regulares.jpeg" alt="Construir autómata" width="300">
+  <br><i>Figura 11. Lienzo de construcción.</i>
+</p>
+
+<p align="center">
+  <img src="capturas/Regex.jpeg" alt="Regex abc a AFD" width="300">
+  <br><i>Figura 12. AFD mínimo generado para <code>abc</code> y simulación aceptada.</i>
 </p>
 
 ### 5.3 Módulo: Autómatas y Lenguajes
@@ -198,12 +185,18 @@ Se probó el lienzo de construcción y la conversión de una expresión regular 
 Se revisaron sus tres pestañas. **AFN → AFD** tiene un lienzo para dibujar el autómata y un campo para probar una o varias cadenas. **Operaciones** permite definir varios lenguajes (L1, L2) con un teclado de símbolos y aplicar unión, concatenación, cierre de Kleene, intersección, complemento, diferencia, reversa, homomorfismo y cociente. **Simplificación** obtiene el AFD con el mínimo número de estados.
  
 <p align="center">
-  <img src="capturas/autech_06_afn_afd.jpeg" alt="AFN a AFD" width="250">
-  &nbsp;
-  <img src="capturas/autech_07_operaciones.jpeg" alt="Operaciones con lenguajes" width="250">
-  &nbsp;
-  <img src="capturas/autech_08_simplificacion.jpeg" alt="Simplificación" width="250">
-  <br><i>Figura 14. AFN → AFD. Figura 15. Operaciones entre lenguajes. Figura 16. Simplificación de AFD.</i>
+  <img src="capturas/AFN-AFD.jpeg" alt="AFN a AFD" width="300">
+  <br><i>Figura 14. AFN → AFD.</i>
+</p>
+
+<p align="center">
+  <img src="capturas/Operaciones_Auto_lenguaje.jpeg" alt="Operaciones con lenguajes" width="300">
+  <br><i>Figura 15. Operaciones entre lenguajes.</i>
+</p>
+
+<p align="center">
+  <img src="capturas/Simplificacion_Lenguajes.jpeg" alt="Simplificación" width="300">
+  <br><i>Figura 16. Simplificación de AFD.</i>
 </p>
 
 ### 5.4 Módulo: Autómata de Pila (PDA)
@@ -211,12 +204,18 @@ Se revisaron sus tres pestañas. **AFN → AFD** tiene un lienzo para dibujar el
 Se definió un PDA con estados `q0,q1,q2`, alfabeto `a,b`, alfabeto de pila `A,Z`, estado inicial `q0`, símbolo inicial de pila `Z`, estado de aceptación `q2` y **5 transiciones**. Corresponde al lenguaje aⁿbⁿ. También se revisaron las pestañas **Simular** (opciones *Grafo + pila* y *Pila + transiciones*) y **CFG** (conversión a gramática libre de contexto, que funciona sin conexión al servidor).
  
 <p align="center">
-  <img src="capturas/autech_09_pda_definir.jpeg" alt="Definir PDA" width="250">
-  &nbsp;
-  <img src="capturas/autech_10_pda_simular.jpeg" alt="Simular PDA" width="250">
-  &nbsp;
-  <img src="capturas/autech_11_pda_cfg.jpeg" alt="PDA a CFG" width="250">
-  <br><i>Figura 17. Definición del PDA. Figura 18. Pestaña de simulación. Figura 19. Conversión a CFG.</i>
+  <img src="capturas/Definir_pila.jpeg" alt="Definir PDA" width="300">
+  <br><i>Figura 17. Definición del PDA.</i>
+</p>
+
+<p align="center">
+  <img src="capturas/Simular_pila.jpeg" alt="Simular PDA" width="300">
+  <br><i>Figura 18. Pestaña de simulación.</i>
+</p>
+
+<p align="center">
+  <img src="capturas/CFG_pila.jpeg" alt="PDA a CFG" width="300">
+  <br><i>Figura 19. Conversión a CFG.</i>
 </p>
 
 ### 5.5 Módulo: Máquina de Turing
@@ -224,12 +223,18 @@ Se definió un PDA con estados `q0,q1,q2`, alfabeto `a,b`, alfabeto de pila `A,Z
 Se definió una MT con estados `q0,q1,q2,q3,qf`, estado inicial `q0`, estado de aceptación `qf`, **11 transiciones** en formato `estado,leer -> nuevo_estado,escribir,dirección` y cinta inicial `aabb`. Reconoce aⁿbⁿ marcando con `X` y `Y`. La pestaña **Grafo** dibujó correctamente el diagrama de estados, con su leyenda (inicial, aceptación, actual, normal) y controles de zoom.
  
 <p align="center">
-  <img src="capturas/autech_12_mt_definicion.jpeg" alt="Definición MT" width="250">
-  &nbsp;
-  <img src="capturas/autech_13_mt_simulacion.jpeg" alt="Simulación MT" width="250">
-  &nbsp;
-  <img src="capturas/autech_14_mt_grafo.jpeg" alt="Grafo MT" width="250">
-  <br><i>Figura 20. Definición de la MT. Figura 21. Pestaña de simulación. Figura 22. Grafo generado de la MT.</i>
+  <img src="capturas/Defincion_turing.jpeg" alt="Definición MT" width="300">
+  <br><i>Figura 20. Definición de la MT.</i>
+</p>
+
+<p align="center">
+  <img src="capturas/Simulacion_turing.jpeg" alt="Simulación MT" width="300">
+  <br><i>Figura 21. Pestaña de simulación.</i>
+</p>
+
+<p align="center">
+  <img src="capturas/Grafo_turing.jpeg" alt="Grafo MT" width="300">
+  <br><i>Figura 22. Grafo generado de la MT.</i>
 </p>
 
 ### 5.6 Pruebas realizadas
@@ -264,31 +269,21 @@ Se definió una MT con estados `q0,q1,q2,q3,qf`, estado inicial `q0`, estado de 
 | 2 | **Textos recortados** | El título "Autómata de Pila (PD..." aparece truncado en la barra superior. En *AFN → AFD* la ayuda de uso se corta ("transiciones vacías" queda incompleto). | Usar un título corto (por ejemplo, "PDA") o permitir dos líneas, y hacer que el cuadro de ayuda crezca o pueda expandirse. |
 | 3 | **Flujo de simulación poco directo** | En la MT y el PDA, la pestaña *Simulación* aparece vacía aunque la definición ya esté capturada. Hay que regresar a *Definición* y presionar "Iniciar Simulación" o "Validar definición". Además, en el grafo de la MT (zoom 61%) las etiquetas de las transiciones se leen muy pequeñas. | Validar automáticamente al cambiar de pestaña o poner un botón "Simular" directamente ahí, y ajustar el zoom inicial o el tamaño de las etiquetas del grafo. |
  
-### 5.9 Formulario de retroalimentación
- 
-Se respondió el formulario de retroalimentación solicitado por el docente.
- 
-<p align="center">
-  <img src="capturas/autech_15_formulario.png" alt="Confirmación del formulario" width="300">
-  <br><i>Figura 23. Confirmación de envío del formulario (sin datos personales visibles).</i>
-</p>
----
+
  
 ## 6. Resumen de pruebas
  
 | Aplicación | Inscripción | Instalación | Ejecución | Pruebas OK | Observaciones |
 |---|---|---|---|---|---|
-| Five Nights at ESCOM | `[✅/❌]` | `[✅/❌]` | `[✅/❌]` | `[x / 6]` | `[Resumen en una línea]` |
-| Salones | `[✅/❌]` | `[✅/❌]` | `[✅/❌]` | `[x / 5]` | `[...]` |
+| Five Nights at ESCOM | `✅` | `✅` | `✅` | `6/ 6` | `Se realizo todas las pruebas necesarias para esta aplicación.` |
+| Salones | `✅` | `✅` | `✅` | `5/ 5` | `Se realizaron las pruebas necesarias para comprobar su funcionamiento.` |
 | AUTECH | ✅ | ✅ | ✅ | 9 / 11 (2 con observaciones) | Funciona bien; detalles de interfaz y flujo de simulación |
- 
-> **Incidencias:** `[Si alguna prueba cerrada no permitió inscribirse o instalar, describe el mensaje mostrado, incluye su captura y anota que se comunicó al docente. Si no hubo, escribe "Sin incidencias".]`
- 
+  
 ---
  
 ## 7. Conclusiones
  
-`[Redacta un párrafo breve sobre lo aprendido: cómo funcionan las pruebas cerradas en Google Play, la importancia de la retroalimentación de los testers antes de publicar una app, y qué aplicación tuvo mejor experiencia y por qué.]`
+`Se cumplio con el objetivo de ser un "Tester" para las aplicaciones mencionadas en este README, donde se ejecuto y se puso a prueba el funcionamiento de las aplicaciones para ver como se desempeñaban, el que tiene más observaciones es la aplicación de AUTECH.`
  
 ---
  
